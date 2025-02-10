@@ -27,7 +27,7 @@
     </div>    
     <section>
         <h2>Application Form</h2>
-        <form action="mailto:ranpo.entusiast@gmail.com" method="post" enctype="text/plain">            
+        <form action="mailto:fionamarana@gmail.com" method="post" enctype="text/plain">            
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="first-name">First Name:</label>
@@ -46,56 +46,64 @@
                 <input type="number" id="age" name="age" min="18" required>
             </fieldset>
             <fieldset>
-                <legend>Employment Details</legend>
-                <label for="company">Company Name:</label>
-                <input type="text" id="company" name="company" required><br>
-                <label for="position">Position:</label>
-                <input type="text" id="position" name="position" required><br>
-                <label for="experience">Years of Experience:</label>
-                <input type="number" id="experience" name="experience" min="0" required>
+                <legend>Property Preferences</legend>
+                <label for="type">Property Type:</label>
+                <select id="type" name="type">
+                    <option value="house">House</option>
+                    <option value="condo">Condominium</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="land">Land</option>
+                </select><br><br>
+    
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="1" max="10"><br><br>
+    
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" min="1" max="10"><br><br>
             </fieldset>
+    
             <fieldset>
-                <legend>Preferences</legend>
-                <p>Preferred Type of Residence:</p>
-                <input type="radio" id="apartment" name="residence" value="Apartment" required>
-                <label for="apartment">Apartment</label><br>
-                <input type="radio" id="house" name="residence" value="House" required>
-                <label for="house">House</label><br>
-                <p>Desired Features:</p>
-                <input type="checkbox" id="pool" name="features" value="Pool">
-                <label for="pool">Pool</label><br>
-                <input type="checkbox" id="garage" name="features" value="Garage">
-                <label for="garage">Garage</label><br>
-                <input type="checkbox" id="garden" name="features" value="Garden">
-                <label for="garden">Garden</label><br>
+                <legend>Financing</legend>
+                <label for="loan">Require Loan?</label>
+                <input type="radio" id="loan_yes" name="loan" value="yes">
+                <label for="loan_yes">Yes</label>
+                <input type="radio" id="loan_no" name="loan" value="no">
+                <label for="loan_no">No</label><br><br>
+                
+                <label for="agent">Working with an Agent?</label>
+                <input type="radio" id="agent_yes" name="agent" value="yes">
+                <label for="agent_yes">Yes</label>
+                <input type="radio" id="agent_no" name="agent" value="no">
+                <label for="agent_no">No</label><br><br>
             </fieldset>
+    
+            <fieldset>
+                <legend>Search Preferences</legend>
+                <label for="search">Search for Properties:</label>
+                <input type="search" id="search" name="search"><br><br>
+    
+                <label for="features">Preferred Features:</label>
+                <input list="features" id="feature" name="feature">
+                <datalist id="features">
+                    <option value="Swimming Pool">
+                    <option value="Garage">
+                    <option value="Garden">
+                    <option value="Basement">
+                </datalist><br><br>
+            </fieldset>
+    
             <fieldset>
                 <legend>Additional Information</legend>
-                <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4" required></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Final Steps</legend>
-                <label for="search">Search:</label>
-                <input type="search" id="search" name="search"><br>
-                <label for="preferred-contact">Preferred Contact Method:</label><br>
-                <select id="preferred-contact" name="preferred-contact">
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                    <option value="mail">Mail</option>
-                    <option value="sms">SMS</option>
-                </select><br>
-                <label for="datalist-example">Example Datalist:</label>
-                <input list="example" id="datalist-example" name="example">
-                <datalist id="example">
-                    <option value="Option 1">
-                    <option value="Option 2">
-                    <option value="Option 3">
-                    <option value="Option 4">
-                </datalist>
-            </fieldset>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+    
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+             </fieldset>
+        
+        <label for="submit"></label>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">    
         </form>
     </section>
     <footer>&copy; 2025 Real Living Real Estate</footer>
