@@ -108,8 +108,8 @@ nav ul li a {
 #about-title {
     font-size: 3rem;
     text-align: left; 
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 
@@ -123,8 +123,8 @@ nav ul li a {
     grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
     gap: 4rem; /* Add space between columns */ 
     margin-bottom: 100px;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .image-card {
