@@ -61,27 +61,6 @@ nav ul li a {
     text-transform: uppercase; /* Make text uppercase */
 }
 
-
-#slideshow {
-    position: relative;
-    width: 100%;
-    height: 480px; /* Adjust the height as needed */
-    overflow: hidden;
-}
-
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 1s ease-in-out; /* Add sliding effect */
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -165,7 +144,7 @@ nav ul li a {
 
 #contact {
     padding: 2rem;
-    background-color: #ce1126;
+    background-color: #013d5a;
     color: #fff;
 }
 
