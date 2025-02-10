@@ -62,51 +62,6 @@ nav ul li a {
 }
 
 
-nav ul li a::after {
-    content: '⮟'; /* Add arrow */
-    position: absolute; /* Set position to absolute */
-    bottom: -20px; /* Adjust the distance below the text */
-    left: 50%; /* Center the arrow horizontally */
-    transform: translateX(-50%); /* Center the arrow horizontally */
-    font-size: 0.8rem; /* Adjust the font size as needed */
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    padding: 0.5rem 0;
-    list-style: none;
-    margin: 0;
-    border-radius: 4px;
-    z-index: 2;
-}
-
-.dropdown li {
-    padding: 0.5rem 1rem;
-}
-
-.dropdown li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.dropdown li a:hover {
-    background-color: #555;
-}
-
-.dropdown li a::after {
-    content: '';
-}
-
-
-
 #slideshow {
     position: relative;
     width: 100%;
@@ -127,25 +82,18 @@ nav ul li:hover .dropdown {
     object-fit: cover;
 }
 
-button.prev, button.next {
+.text-overlay {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    left: 25%;
+    transform: translate(-50%, -50%);
     color: white;
-    border: none;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 1rem;
-    cursor: pointer;
-    z-index: 10;
+    border-radius: 5px;
 }
 
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
 
 #search {
     display: flex;
