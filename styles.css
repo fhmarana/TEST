@@ -11,11 +11,11 @@ body {
     font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
-    background-color: #fcf3e3;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #013d5a;
+    background-color: #ffffff;
     color: #fff;
     padding: 1rem 0;
 }
@@ -53,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #013d5a;
     text-decoration: none;
     font-size: 1.2rem; /* Adjust the font size as needed */
     display: flex;
@@ -89,10 +89,10 @@ nav ul li a {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 1rem;
     border-radius: 5px;
 }
+
 
 
 #search {
