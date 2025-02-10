@@ -1,35 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
 body {
-    font-family: Arial, sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-image: url('background.jpg');
-    background-size: cover;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
-header, nav, section, footer {
-    margin-bottom: 20px;
-}
+
 header {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
+    background-color: #ce1126;
+    color: #fff;
+    padding: 1rem 0;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    height: 60px; /* Adjust the height as needed */
+}
+
 nav {
-    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
-nav a {
-    margin: 0 15px;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 6rem; /* Increase the gap between elements */
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; /* Make text uppercase */
 }
-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+
+
+nav ul li a::after {
+    content: '⮟'; /* Add arrow */
+    position: absolute; /* Set position to absolute */
+    bottom: -20px; /* Adjust the distance below the text */
+    left: 50%; /* Center the arrow horizontally */
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    font-size: 0.8rem; /* Adjust the font size as needed */
 }
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0.5rem 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.dropdown li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+}
+
+.dropdown li a::after {
+    content: '';
+}
+
+
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 480px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out; /* Add sliding effect */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.search-container {
+    width: 1200px; /* Set the width to 1200px */
+    height: 350px; /* Set the height to 200px */
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    background-color: #ce1126; /* Set background color to see the container */
+    margin: 40px;
+}
+
+.search-text {
+    margin-bottom: 0.5rem; /* Add space below the text */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #ffffff; /* Set the font color */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the text takes up the full width */
+}
+
+.search-container input,
+.search-container button {
+    align-self: center; /* Align input and button to the center */
+}
+
+#search input {
+    width: 880px; /* Set the width to 880px */
+    height: 72px; /* Set the height to 72px */
+    padding: 2rem; /* Adjust the padding to control the font margin */
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin: 1rem;
+    font-size: 30px;
+    font-family: "Poppins", serif;
+}
+
+#search button {
+    width: 270px; /* Set the width to 270px */
+    height: 72px; /* Set the height to 72px */
+    padding: 1rem; /* Fixed padding */
+    font-size: 1.2rem; /* Fixed font size */
+    border: none;
+    border-radius: 4px;
+    background-color: #dfa40e;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem; /* Add margin to the top to adjust position */
+}
+
+#search button:hover {
+    background-color: #fbff00;
+}
+
+#balita-title {
+    font-size: 3rem;
+    text-align: left; 
+    margin: 1rem 0;
+}
+
+
+#news {
+    padding: 2rem;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns */
+    gap: 1rem; /* Adjust the gap between items */
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center the content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for animation */
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 0px; /* Remove the margin for the image */ 
+}
+
+.news-item h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.news-item:hover {
+    transform: translateY(-10px); /* Move the card up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+
+#about {
+    padding: 2rem;
+    background-color: #ce1126;
+    color: #fff;
+}
+
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    font-size: 0.8em;
+    padding: 1rem 0;
 }
-p {
-    text-indent: 50px;
-}
+
+
+
+
