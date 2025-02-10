@@ -93,66 +93,16 @@ nav ul li a {
     border-radius: 5px;
 }
 
-
-
-#search {
+#floorplan {
     display: flex;
-    justify-content: center;
-    padding: 1rem;
-    background-color: #ffffff;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Make the section take up the full viewport height */
 }
 
-.search-container {
-    width: 1200px; /* Set the width to 1200px */
-    height: 350px; /* Set the height to 200px */
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    background-color: #ce1126; /* Set background color to see the container */
-    margin: 40px;
-}
-
-.search-text {
-    margin-bottom: 0.5rem; /* Add space below the text */
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    color: #ffffff; /* Set the font color */
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure the text takes up the full width */
-}
-
-.search-container input,
-.search-container button {
-    align-self: center; /* Align input and button to the center */
-}
-
-#search input {
-    width: 880px; /* Set the width to 880px */
-    height: 72px; /* Set the height to 72px */
-    padding: 2rem; /* Adjust the padding to control the font margin */
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    margin: 1rem;
-    font-size: 30px;
-    font-family: "Poppins", serif;
-}
-
-#search button {
-    width: 270px; /* Set the width to 270px */
-    height: 72px; /* Set the height to 72px */
-    padding: 1rem; /* Fixed padding */
-    font-size: 1.2rem; /* Fixed font size */
-    border: none;
-    border-radius: 4px;
-    background-color: #dfa40e;
-    color: #ffffff;
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 1rem; /* Add margin to the top to adjust position */
-}
-
-#search button:hover {
-    background-color: #fbff00;
+#floorplan img {
+    max-width: 100%;
+    height: auto; 
 }
 
 #balita-title {
