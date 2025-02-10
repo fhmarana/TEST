@@ -30,7 +30,7 @@ header {
 }
 
 .logo {
-    height: 60px; /* Adjust the height as needed */
+    height: 60px;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 6rem; /* Increase the gap between elements */
+    gap: 6rem;
     position: relative;
 }
 
@@ -55,10 +55,10 @@ nav ul li {
 nav ul li a {
     color: #013d5a;
     text-decoration: none;
-    font-size: 1.2rem; /* Adjust the font size as needed */
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
-    text-transform: uppercase; /* Make text uppercase */
+    text-transform: uppercase; 
 }
 
 .text-overlay {
@@ -74,9 +74,9 @@ nav ul li a {
 
 #floorplan {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100vh; /* Make the section take up the full viewport height */
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
 }
 
 #floorplan-title {
@@ -114,8 +114,8 @@ nav ul li a {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
-    gap: 4rem; /* Add space between columns */ 
+    grid-template-columns: 1fr 1fr; 
+    gap: 4rem; 
     margin-bottom: 100px;
     margin-left: 250px;
     margin-right: 250px;
