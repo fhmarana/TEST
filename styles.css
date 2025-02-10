@@ -100,6 +100,22 @@ nav ul li a {
     height: 100vh; /* Make the section take up the full viewport height */
 }
 
+#floorplan-title {
+    font-size: 3rem;
+    text-align: left; 
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 10px;
+}
+
+.floorplan-text {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
 #floorplan img {
     max-width: 100%;
     height: auto; 
@@ -116,7 +132,6 @@ nav ul li a {
 #about {
     padding: 2rem;
 }
-
 
 .content {
     display: grid;
