@@ -83,12 +83,13 @@ nav ul li a {
 }
 
 .text-overlay {
-    position: absolute;
+    position: fixed;
+    text-align: left;
     top: 50%;
-    left: 25%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 1rem;
     border-radius: 5px;
